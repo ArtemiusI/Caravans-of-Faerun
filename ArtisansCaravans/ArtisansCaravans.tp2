@@ -1,0 +1,112 @@
+BACKUP ~ArtisansCaravans/backup~
+AUTHOR ~The Artisan~
+AUTO_TRA ~%MOD_FOLDER%/languages/%s~
+
+ALWAYS
+ACTION_IF GAME_IS ~BGEE~ THEN BEGIN
+OUTER_SPRINT "bg1_eet_symbol" AR
+END
+
+ACTION_IF GAME_IS ~EET~ THEN BEGIN
+OUTER_SPRINT "bg1_eet_symbol" BG
+END
+
+END
+
+LANGUAGE ~English~
+         ~English~
+		 ~%MOD_FOLDER%/languages/english/setup.tra~
+
+BEGIN ~Caravans of Faerûn: A Better Way to Travel~
+REQUIRE_PREDICATE GAME_IS ~BGEE EET~ ~This mod must be installed on BG:EE or EET.~
+
+COPY ~%MOD_FOLDER%/CRE/C0CAR#01.CRE~ ~OVERRIDE~
+  WRITE_ASCII DEATHVAR ~C0CAR#01~ #32
+  WRITE_ASCII DIALOG ~C0CAR#01~ #8
+SAY NAME1 ~Caravan Master~
+SAY NAME2 ~Caravan Master~
+
+COPY ~%MOD_FOLDER%/CRE/C0CAR#02.CRE~ ~OVERRIDE~
+  WRITE_ASCII DEATHVAR ~C0CAR#01~ #32
+  WRITE_ASCII DIALOG ~C0CAR#01~ #8
+SAY NAME1 ~Caravan Master~
+SAY NAME2 ~Caravan Master~
+
+COPY_EXISTING ~%bg1_eet_symbol%3300.are~ ~override~
+ LPF fj_are_structure
+ INT_VAR
+ fj_loc_x = 2060
+ fj_loc_y = 3500
+ fj_dest_x = 2060
+ fj_dest_y = 3500
+ fj_orientation = 0
+ STR_VAR
+ fj_structure_type = actor
+ fj_name = Caravan Master
+ fj_cre_resref = C0CAR#01
+ fj_dlg_resref = C0CAR#01
+ END
+
+COPY_EXISTING ~%bg1_eet_symbol%4800.are~ ~override~
+ LPF fj_are_structure
+ INT_VAR
+ fj_loc_x = 1113
+ fj_loc_y = 500
+ fj_dest_x = 1113
+ fj_dest_y = 500
+ fj_orientation = 0
+ STR_VAR
+ fj_structure_type = actor
+ fj_name = Caravan Master
+ fj_cre_resref = C0CAR#01
+ fj_dlg_resref = C0CAR#01
+ END
+
+COPY_EXISTING ~%bg1_eet_symbol%2300.are~ ~override~
+ LPF fj_are_structure
+ INT_VAR
+ fj_loc_x = 2484
+ fj_loc_y = 2615
+ fj_dest_x = 2484
+ fj_dest_y = 2615
+ fj_orientation = 0
+ STR_VAR
+ fj_structure_type = actor
+ fj_name = Caravan Master
+ fj_cre_resref = C0CAR#01
+ fj_dlg_resref = C0CAR#01
+ END
+ 
+COPY_EXISTING ~%bg1_eet_symbol%1000.are~ ~override~
+ LPF fj_are_structure
+ INT_VAR
+ fj_loc_x = 2226
+ fj_loc_y = 1147
+ fj_dest_x = 2226
+ fj_dest_y = 1147
+ fj_orientation = 0
+ STR_VAR
+ fj_structure_type = actor
+ fj_name = Caravan Master
+ fj_cre_resref = C0CAR#02
+ fj_dlg_resref = C0CAR#01
+ END
+
+COPY_EXISTING ~%bg1_eet_symbol%0900.are~ ~override~
+ LPF fj_are_structure
+ INT_VAR
+ fj_loc_x = 474
+ fj_loc_y = 565
+ fj_dest_x = 474
+ fj_dest_y = 565
+ fj_orientation = 0
+ STR_VAR
+ fj_structure_type = actor
+ fj_name = Caravan Master
+ fj_cre_resref = C0CAR#01
+ fj_dlg_resref = C0CAR#01
+ END
+
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/BAF/C0CAR#SC.BAF~
+
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/D/DIALOG.D~

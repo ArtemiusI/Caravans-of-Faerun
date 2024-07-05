@@ -1,0 +1,482 @@
+/*
+DESTINATION GLOBALS
+ 1 = Beregost
+ 2 = Nashkel
+ 3 = Friendly Arm Inn
+ 4 = Ulgoth's Beard
+ 5 = Baldur's Gate
+ 6 = Durlag's Tower
+ 7 = Gullykin
+*/
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",0)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        SetGlobal("C0CaravanTravelStage","GLOBAL",1)
+        StartCutSceneEx("C0CAR#SC",TRUE)
+END
+
+// TRAVEL TIME
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",1)
+    Global("C0CaravanTravelTime","GLOBAL",4)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([30.0],0)
+        SmallWait(30)
+        AdvanceTime(FOUR_HOURS)
+        Wait(3)
+        SetGlobal("C0CaravanTravelStage","GLOBAL",2)
+        StartCutSceneEx("C0CAR#SC",TRUE)
+END
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",1)
+    Global("C0CaravanTravelTime","GLOBAL",6)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([30.0],0)
+        SmallWait(30)
+        AdvanceTime(SIX_HOURS)
+        Wait(3)
+        SetGlobal("C0CaravanTravelStage","GLOBAL",2)
+        StartCutSceneEx("C0CAR#SC",TRUE)
+END
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",1)
+    Global("C0CaravanTravelTime","GLOBAL",8)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([30.0],0)
+        SmallWait(30)
+        AdvanceTime(EIGHT_HOURS)
+        Wait(3)
+        SetGlobal("C0CaravanTravelStage","GLOBAL",2)
+        StartCutSceneEx("C0CAR#SC",TRUE)
+END
+IF
+    Global("C0CaravanTravelStage","GLOBAL",1)
+    Global("C0CaravanTravelTime","GLOBAL",10)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([30.0],0)
+        SmallWait(30)
+        AdvanceTime(TEN_HOURS)
+        Wait(3)
+        SetGlobal("C0CaravanTravelStage","GLOBAL",2)
+        StartCutSceneEx("C0CAR#SC",TRUE)
+END
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",1)
+    Global("C0CaravanTravelTime","GLOBAL",12)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([30.0],0)
+        SmallWait(30)
+        AdvanceTime(TWELVE_HOURS)
+        Wait(3)
+        SetGlobal("C0CaravanTravelStage","GLOBAL",2)
+        StartCutSceneEx("C0CAR#SC",TRUE)
+END
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",1)
+    Global("C0CaravanTravelTime","GLOBAL",14)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([30.0],0)
+        SmallWait(30)
+        AdvanceTime(FOURTEEN_HOURS)
+        Wait(3)
+        SetGlobal("C0CaravanTravelStage","GLOBAL",2)
+        StartCutSceneEx("C0CAR#SC",TRUE)
+END
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",1)
+    Global("C0CaravanTravelTime","GLOBAL",15)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([30.0],0)
+        SmallWait(30)
+        AdvanceTime(FIFTEEN_HOURS)
+        Wait(3)
+        SetGlobal("C0CaravanTravelStage","GLOBAL",2)
+        StartCutSceneEx("C0CAR#SC",TRUE)
+END
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",1)
+    Global("C0CaravanTravelTime","GLOBAL",16)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([30.0],0)
+        SmallWait(30)
+        AdvanceTime(SIXTEEN_HOURS)
+        Wait(3)
+        SetGlobal("C0CaravanTravelStage","GLOBAL",2)
+        StartCutSceneEx("C0CAR#SC",TRUE)
+END
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",1)
+    Global("C0CaravanTravelTime","GLOBAL",18)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([30.0],0)
+        SmallWait(30)
+        AdvanceTime(EIGHTEEN_HOURS)
+        Wait(3)
+        SetGlobal("C0CaravanTravelStage","GLOBAL",2)
+        StartCutSceneEx("C0CAR#SC",TRUE)
+END
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",1)
+    Global("C0CaravanTravelTime","GLOBAL",20)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([30.0],0)
+        SmallWait(30)
+        AdvanceTime(TWENTY_HOURS)
+        Wait(3)
+        SetGlobal("C0CaravanTravelStage","GLOBAL",2)
+        StartCutSceneEx("C0CAR#SC",TRUE)
+END
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",1)
+    Global("C0CaravanTravelTime","GLOBAL",24)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([30.0],0)
+        SmallWait(30)
+        AdvanceTime(ONE_DAY)
+        Wait(3)
+        SetGlobal("C0CaravanTravelStage","GLOBAL",2)
+        StartCutSceneEx("C0CAR#SC",TRUE)
+END
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",1)
+    Global("C0CaravanTravelTime","GLOBAL",28)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([30.0],0)
+        SmallWait(30)
+        AdvanceTime(9400)
+        Wait(3)
+        SetGlobal("C0CaravanTravelStage","GLOBAL",2)
+        StartCutSceneEx("C0CAR#SC",TRUE)
+END
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",1)
+    Global("C0CaravanTravelTime","GLOBAL",32)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([30.0],0)
+        SmallWait(30)
+        AdvanceTime(9600)
+        Wait(3)
+        SetGlobal("C0CaravanTravelStage","GLOBAL",2)
+        StartCutSceneEx("C0CAR#SC",TRUE)
+END
+
+// BEREGOST
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",2)
+    Global("C0CaravanDestination","GLOBAL",1)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        LeaveAreaLUA("%bg1_eet_symbol%3300","",[1822.314],S)
+        ActionOverride(Player2,LeaveAreaLUA("%bg1_eet_symbol%3300","",[1822.244],S))
+        ActionOverride(Player3,LeaveAreaLUA("%bg1_eet_symbol%3300","",[1822.174],S))
+        ActionOverride(Player4,LeaveAreaLUA("%bg1_eet_symbol%3300","",[1752.244],S))
+        ActionOverride(Player5,LeaveAreaLUA("%bg1_eet_symbol%3300","",[1752.314],S))
+        ActionOverride(Player6,LeaveAreaLUA("%bg1_eet_symbol%3300","",[1752.174],S))
+        Rest()
+        ActionOverride(Player2,Rest())
+        ActionOverride(Player3,Rest())
+        ActionOverride(Player4,Rest())
+        ActionOverride(Player5,Rest())
+        ActionOverride(Player6,Rest())
+        SetGlobal("C0CaravanTravelStage","GLOBAL",0)
+        SetGlobal("C0CaravanTravelTime","GLOBAL",0)
+        SetGlobal("C0CaravanDestination","GLOBAL",0)
+        FadeFromColor([30.0],0)
+        SmallWait(30)
+        EndCutSceneMode()
+END
+
+// NASHKEL
+
+IF
+    Global("BD_VISITED_NASHKEL","GLOBAL",0)
+    Global("C0CaravanTravelStage","GLOBAL",2)
+    Global("C0CaravanDestination","GLOBAL",2)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        LeaveAreaLUA("%bg1_eet_symbol%4800","",[615.261],S)
+        ActionOverride(Player2,LeaveAreaLUA("%bg1_eet_symbol%4800","",[615.191],S))
+        ActionOverride(Player3,LeaveAreaLUA("%bg1_eet_symbol%4800","",[615.121],S))
+        ActionOverride(Player4,LeaveAreaLUA("%bg1_eet_symbol%4800","",[545.261],S))
+        ActionOverride(Player5,LeaveAreaLUA("%bg1_eet_symbol%4800","",[545.191],S))
+        ActionOverride(Player6,LeaveAreaLUA("%bg1_eet_symbol%4800","",[545.121],S))
+        Rest()
+        ActionOverride(Player2,Rest())
+        ActionOverride(Player3,Rest())
+        ActionOverride(Player4,Rest())
+        ActionOverride(Player5,Rest())
+        ActionOverride(Player6,Rest())
+        SetGlobal("C0CaravanTravelStage","GLOBAL",0)
+        SetGlobal("C0CaravanTravelTime","GLOBAL",0)
+        SetGlobal("C0CaravanDestination","GLOBAL",0)
+        FadeFromColor([30.0],0)
+        SmallWait(30)
+        EndCutSceneMode()
+END
+
+IF
+    Global("BD_VISITED_NASHKEL","GLOBAL",1)
+    Global("C0CaravanTravelStage","GLOBAL",2)
+    Global("C0CaravanDestination","GLOBAL",2)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        LeaveAreaLUA("%bg1_eet_symbol%4800","",[3748.2292],S)
+        ActionOverride(Player2,LeaveAreaLUA("%bg1_eet_symbol%4800","",[3748.2222],S))
+        ActionOverride(Player3,LeaveAreaLUA("%bg1_eet_symbol%4800","",[3748.2152],S))
+        ActionOverride(Player4,LeaveAreaLUA("%bg1_eet_symbol%4800","",[3678.2292],S))
+        ActionOverride(Player5,LeaveAreaLUA("%bg1_eet_symbol%4800","",[3678.2222],S))
+        ActionOverride(Player6,LeaveAreaLUA("%bg1_eet_symbol%4800","",[3678.2152],S))
+        Rest()
+        ActionOverride(Player2,Rest())
+        ActionOverride(Player3,Rest())
+        ActionOverride(Player4,Rest())
+        ActionOverride(Player5,Rest())
+        ActionOverride(Player6,Rest())
+        SetGlobal("C0CaravanTravelStage","GLOBAL",0)
+        SetGlobal("C0CaravanTravelTime","GLOBAL",0)
+        SetGlobal("C0CaravanDestination","GLOBAL",0)
+        FadeFromColor([30.0],0)
+        SmallWait(30)
+        EndCutSceneMode()
+END
+
+// FRIENDLY ARM INN
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",2)
+    Global("C0CaravanDestination","GLOBAL",3)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        LeaveAreaLUA("%bg1_eet_symbol%2300","",[1181.3513],S)
+        ActionOverride(Player2,LeaveAreaLUA("%bg1_eet_symbol%2300","",[1181.3443],S))
+        ActionOverride(Player3,LeaveAreaLUA("%bg1_eet_symbol%2300","",[1181.3373],S))
+        ActionOverride(Player4,LeaveAreaLUA("%bg1_eet_symbol%2300","",[1111.3513],S))
+        ActionOverride(Player5,LeaveAreaLUA("%bg1_eet_symbol%2300","",[1111.3443],S))
+        ActionOverride(Player6,LeaveAreaLUA("%bg1_eet_symbol%2300","",[1111.3373],S))
+        Rest()
+        ActionOverride(Player2,Rest())
+        ActionOverride(Player3,Rest())
+        ActionOverride(Player4,Rest())
+        ActionOverride(Player5,Rest())
+        ActionOverride(Player6,Rest())
+        SetGlobal("C0CaravanTravelStage","GLOBAL",0)
+        SetGlobal("C0CaravanTravelTime","GLOBAL",0)
+        SetGlobal("C0CaravanDestination","GLOBAL",0)
+        FadeFromColor([30.0],0)
+        SmallWait(30)
+        EndCutSceneMode()
+END
+
+// ULGOTH'S BEARD
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",2)
+    Global("C0CaravanDestination","GLOBAL",4)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        LeaveAreaLUA("%bg1_eet_symbol%1000","",[2573.995],S)
+        ActionOverride(Player2,LeaveAreaLUA("%bg1_eet_symbol%1000","",[2573.925],S))
+        ActionOverride(Player3,LeaveAreaLUA("%bg1_eet_symbol%1000","",[2573.855],S))
+        ActionOverride(Player4,LeaveAreaLUA("%bg1_eet_symbol%1000","",[2503.995],S))
+        ActionOverride(Player5,LeaveAreaLUA("%bg1_eet_symbol%1000","",[2503.925],S))
+        ActionOverride(Player6,LeaveAreaLUA("%bg1_eet_symbol%1000","",[2503.855],S))
+        Rest()
+        ActionOverride(Player2,Rest())
+        ActionOverride(Player3,Rest())
+        ActionOverride(Player4,Rest())
+        ActionOverride(Player5,Rest())
+        ActionOverride(Player6,Rest())
+        SetGlobal("C0CaravanTravelStage","GLOBAL",0)
+        SetGlobal("C0CaravanTravelTime","GLOBAL",0)
+        SetGlobal("C0CaravanDestination","GLOBAL",0)
+        FadeFromColor([30.0],0)
+        SmallWait(30)
+        EndCutSceneMode()
+END
+
+// BALDUR'S GATE
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",2)
+    Global("C0CaravanDestination","GLOBAL",5)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        LeaveAreaLUA("%bg1_eet_symbol%0900","",[328.1038],S)
+        ActionOverride(Player2,LeaveAreaLUA("%bg1_eet_symbol%0900","",[328.968],S))
+        ActionOverride(Player3,LeaveAreaLUA("%bg1_eet_symbol%0900","",[328.898],S))
+        ActionOverride(Player4,LeaveAreaLUA("%bg1_eet_symbol%0900","",[258.1038],S))
+        ActionOverride(Player5,LeaveAreaLUA("%bg1_eet_symbol%0900","",[258.968],S))
+        ActionOverride(Player6,LeaveAreaLUA("%bg1_eet_symbol%0900","",[258.898],S))
+        Rest()
+        ActionOverride(Player2,Rest())
+        ActionOverride(Player3,Rest())
+        ActionOverride(Player4,Rest())
+        ActionOverride(Player5,Rest())
+        ActionOverride(Player6,Rest())
+        SetGlobal("C0CaravanTravelStage","GLOBAL",0)
+        SetGlobal("C0CaravanTravelTime","GLOBAL",0)
+        SetGlobal("C0CaravanDestination","GLOBAL",0)
+        FadeFromColor([30.0],0)
+        SmallWait(30)
+        EndCutSceneMode()
+END
+
+// DURLAG'S TOWER
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",2)
+    Global("C0CaravanDestination","GLOBAL",6)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        LeaveAreaLUA("%bg1_eet_symbol%0500","",[492.275],S)
+        ActionOverride(Player2,LeaveAreaLUA("%bg1_eet_symbol%0500","",[492.205],S))
+        ActionOverride(Player3,LeaveAreaLUA("%bg1_eet_symbol%0500","",[492.135],S))
+        ActionOverride(Player4,LeaveAreaLUA("%bg1_eet_symbol%0500","",[422.275],S))
+        ActionOverride(Player5,LeaveAreaLUA("%bg1_eet_symbol%0500","",[422.205],S))
+        ActionOverride(Player6,LeaveAreaLUA("%bg1_eet_symbol%0500","",[422.135],S))
+        Rest()
+        ActionOverride(Player2,Rest())
+        ActionOverride(Player3,Rest())
+        ActionOverride(Player4,Rest())
+        ActionOverride(Player5,Rest())
+        ActionOverride(Player6,Rest())
+        SetGlobal("C0CaravanTravelStage","GLOBAL",0)
+        SetGlobal("C0CaravanTravelTime","GLOBAL",0)
+        SetGlobal("C0CaravanDestination","GLOBAL",0)
+        FadeFromColor([30.0],0)
+        SmallWait(30)
+        EndCutSceneMode()
+END
+
+// GULLYKIN
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",2)
+    Global("C0CaravanDestination","GLOBAL",7)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        LeaveAreaLUA("%bg1_eet_symbol%4000","",[531.718],S)
+        ActionOverride(Player2,LeaveAreaLUA("%bg1_eet_symbol%4000","",[531.648],S))
+        ActionOverride(Player3,LeaveAreaLUA("%bg1_eet_symbol%4000","",[531.578],S))
+        ActionOverride(Player4,LeaveAreaLUA("%bg1_eet_symbol%4000","",[461.718],S))
+        ActionOverride(Player5,LeaveAreaLUA("%bg1_eet_symbol%4000","",[461.648],S))
+        ActionOverride(Player6,LeaveAreaLUA("%bg1_eet_symbol%4000","",[461.578],S))
+        Rest()
+        ActionOverride(Player2,Rest())
+        ActionOverride(Player3,Rest())
+        ActionOverride(Player4,Rest())
+        ActionOverride(Player5,Rest())
+        ActionOverride(Player6,Rest())
+        SetGlobal("C0CaravanTravelStage","GLOBAL",0)
+        SetGlobal("C0CaravanTravelTime","GLOBAL",0)
+        SetGlobal("C0CaravanDestination","GLOBAL",0)
+        FadeFromColor([30.0],0)
+        SmallWait(30)
+        EndCutSceneMode()
+END
+
+// ULCASTER
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",2)
+    Global("C0CaravanDestination","GLOBAL",8)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        LeaveAreaLUA("%bg1_eet_symbol%4000","",[1111.204],S)
+        ActionOverride(Player2,LeaveAreaLUA("%bg1_eet_symbol%4000","",[1111.134],S))
+        ActionOverride(Player3,LeaveAreaLUA("%bg1_eet_symbol%4000","",[1111.64],S))
+        ActionOverride(Player4,LeaveAreaLUA("%bg1_eet_symbol%4000","",[1041.204],S))
+        ActionOverride(Player5,LeaveAreaLUA("%bg1_eet_symbol%4000","",[1041.134],S))
+        ActionOverride(Player6,LeaveAreaLUA("%bg1_eet_symbol%4000","",[1041.64],S))
+        Rest()
+        ActionOverride(Player2,Rest())
+        ActionOverride(Player3,Rest())
+        ActionOverride(Player4,Rest())
+        ActionOverride(Player5,Rest())
+        ActionOverride(Player6,Rest())
+        SetGlobal("C0CaravanTravelStage","GLOBAL",0)
+        SetGlobal("C0CaravanTravelTime","GLOBAL",0)
+        SetGlobal("C0CaravanDestination","GLOBAL",0)
+        FadeFromColor([30.0],0)
+        SmallWait(30)
+        EndCutSceneMode()
+END
+
+// HIGH HEDGE
+
+IF
+    Global("C0CaravanTravelStage","GLOBAL",2)
+    Global("C0CaravanDestination","GLOBAL",9)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        LeaveAreaLUA("%bg1_eet_symbol%3200","",[2644.2774],S)
+        ActionOverride(Player2,LeaveAreaLUA("%bg1_eet_symbol%3200","",[2644.2704],S))
+        ActionOverride(Player3,LeaveAreaLUA("%bg1_eet_symbol%3200","",[2644.2634],S))
+        ActionOverride(Player4,LeaveAreaLUA("%bg1_eet_symbol%3200","",[2574.2774],S))
+        ActionOverride(Player5,LeaveAreaLUA("%bg1_eet_symbol%3200","",[2574.2704],S))
+        ActionOverride(Player6,LeaveAreaLUA("%bg1_eet_symbol%3200","",[2574.2634],S))
+        Rest()
+        ActionOverride(Player2,Rest())
+        ActionOverride(Player3,Rest())
+        ActionOverride(Player4,Rest())
+        ActionOverride(Player5,Rest())
+        ActionOverride(Player6,Rest())
+        SetGlobal("C0CaravanTravelStage","GLOBAL",0)
+        SetGlobal("C0CaravanTravelTime","GLOBAL",0)
+        SetGlobal("C0CaravanDestination","GLOBAL",0)
+        FadeFromColor([30.0],0)
+        SmallWait(30)
+        EndCutSceneMode()
+END
